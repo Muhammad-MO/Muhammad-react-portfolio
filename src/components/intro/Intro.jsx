@@ -1,4 +1,4 @@
-import React from 'react';
+
 import "./intro.scss";
 import { init } from "ityped"
 import {useEffect, useRef} from "react"
@@ -18,7 +18,7 @@ const textRef = useRef();
         <div className = "intro" id  = "intro">
          <div className="left">
              <div className ="imgContainer">
-                 <img src="assets/Muhammad.png" alt="muhd"/>
+                 <img src="assets/man.png" alt="muhd"/>
              </div>
               </div>  
 
