@@ -18,26 +18,34 @@ const textRef = useRef();
         <div className = "intro" id  = "intro">
          <div className="left">
              <div className ="imgContainer">
-                 <img src="assets/Muhammad.png" alt="muhd"/>
+                 <img src="assets/mmprofile1.png" alt="muhd"/>
              </div>
               </div>  
 
-         <div className="right">
+         <div className="center">
           <div className="wrapper">
-
-              <h2> Hi There, I'm</h2>
+        
+             <h2> Hi There, I'm</h2>
               <h1>Muhammad bin Mahmood</h1>
               <h3>
-                  Freelance <span ref={textRef}></span>
-                  
+                  Freelance <span ref={textRef}></span>    
               </h3>
-
           </div>
-      <a href="#portfolio">
-          <img src="assets/down.png" alt=""/>
-      </a>
-
-   </div> 
+       
+        </div> 
+        
+        <div className="right">
+           <div className ="imgContainer">
+            <img src="assets/mmprofile2.png" alt="muhd"/>
+            </div>
+        </div>  
         </div>
+
+
+
+
+
+
+
     );
 }

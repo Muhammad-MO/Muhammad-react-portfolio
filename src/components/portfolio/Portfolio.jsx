@@ -3,82 +3,76 @@ import PortfolioList from '../portfolioList/PortfolioList'
 import "./portfolio.scss"
 import{useEffect, useState} from "react";
 import{
-        featuredPortfolio,
-        webPortfolio,
-        mobilePortfolio,
-        designPortfolio,
-        contentPortfolio} from "../../data";
+    SchoolProjectsPortfolio,
+    foodPortfolio,
+    exercisePortfolio,
+    landingpagePortfolio,
+                   } from "../../data";
+
 
 
 
 export default function Portfolio() {
-    const[selected, setSelected] = useState("featured")
+    const[selected, setSelected] = useState("School_Projects")
     const[data, setData] = useState([]);
 
     const list =[
 
         {
 
-            id: "featured",
-            title: "Featured",
+            id: "School_Projects",
+            title: "School_Projects",
         },
 
         {
 
-            id: "web",
-            title: "Web App",
+            id: "Food",
+            title: "Food App",
         },
 
         {
 
-            id: "mobile",
-            title: "Mobile App",
+            id: "Exercise",
+            title: "Exercise App",
         },
 
         {
 
-            id: "design",
-            title: "Design",
+            id: "Landing",
+            title: "Landing_page App",
         },
 
        
-        {
-
-            id: "content",
-            title: "Content",
-        },
         
 
     ];
 
     useEffect(() => {
         switch(selected){
-           case "featured":
-               setData(featuredPortfolio);
+           case "School_Projects":
+               setData(SchoolProjectsPortfolio);
                break;
 
-               case "web":
-               setData(webPortfolio);
+               case "Food":
+               setData(foodPortfolio);
                break;
 
-               case "mobile":
-               setData(mobilePortfolio);
+               case "Exercise":
+               setData(exercisePortfolio);
                break;
 
-               case "design":
-               setData(designPortfolio);
+               case "Landing":
+               setData(landingpagePortfolio);
                break;
 
-               case "content":
-               setData(contentPortfolio);
-               break;
               default:
-              setData(featuredPortfolio);
+              setData(SchoolProjectsPortfolio);
     
     }
 
     },[selected])
     return (
+       
         <div className = "portfolio" id = "portfolio">
             <h1>Portfolio</h1>
        <ul>
@@ -93,10 +87,18 @@ export default function Portfolio() {
        <img src={d.img} alt=""
        />
        <h3>{d.title}</h3>
+
+       
         </div>
 
            ))}
+  
+
          </div>
+       
         </div>
+
+     
+        
     );
 }

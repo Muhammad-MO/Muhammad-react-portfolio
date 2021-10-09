@@ -47,16 +47,7 @@ export default function Testimonials() {
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
           },
 
-          {
-            id: 5,
-            name: "Martin Landau",
-            title: "CEO of JEA",
-            img:
-              "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-            icon: "assets/linkedin.png",
-            desc:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
-          },
+          
 
       ];
 

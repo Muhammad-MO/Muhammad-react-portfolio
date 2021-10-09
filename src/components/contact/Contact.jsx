@@ -14,21 +14,21 @@ export default function Contact() {
         <div className = "contact" id = "contact">
             <div className="left">
       
-                <img src="assets/shake.jpeg" alt=""/>
+                {/* <img src="assets/shake.jpeg" alt=""/> */}
             </div>
             
             <div className="right">
 
-                <h2>Contact</h2>
+                {/* <h2>Contact</h2>
                 <form onSubmit={handleSubmit}>
-                  <input type = "text" placeholder="Email"/>
+                  <input type = "text" placeholder="Email"/> */}
                 
 
-                  <textarea></textarea>
-                  <button type="submit">Send</button>
+                  {/* <textarea></textarea> */}
+                  {/* <button type="submit">Send</button>
 
                 {message && <span>Thanks, I'll reply ASAP:)</span>}
-                </form>
+                </form> */}
             </div>
             
         </div>

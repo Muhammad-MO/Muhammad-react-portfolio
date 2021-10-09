@@ -3,7 +3,8 @@ import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Testimonials from "./components/testimonials/Testimonials";
-import Works from "./components/works/Works";
+import Workexperience from "./components/workexperience/Workexperience";
+
 import "./app.scss";
 import Menu from "./components/menu/Menu";
 import {useState} from "react";
@@ -18,13 +19,16 @@ function App() {
       <div className = "sections">
     <Intro/>
     <Portfolio/>
-    <Works/>
+    <Workexperience/>
     <Testimonials/>
-    <Contact/>
-      </div>
-   
 
+    <Contact/> 
+      </div>
+
+    
     </div>
+
+    
   );
 }
 
